@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\RequirePackage[style=apa,backend=biber]{biblatex}
+\usepackage{hyperref}
+\usepackage[numbib]{tocbibind}
+\addbibresource{hate_crimes.bib}
+
+\DeclareLanguageMapping{american}{american-apa}
+
+%% annote
+\renewbibmacro*{finentry}{%
+  \iffieldundef{annotation}
+    {\finentry\vspace{14pt}}
+    {\setunit{\finentrypunct\par\vspace{9pt}\nobreak}
+     \printfield{annotation}\vspace{14pt}%
+     \finentry}
+     }
+
+\title{Anti-LGBTQ Hate Crimes: \\An Annotated Bibliography}
+\author{Compiled by Jane Sandberg}
+\date{Last updated \today}
+
+\begin{document}
+\maketitle
+
+ 
+ This bibliography includes books -- both scholarly and popular -- and academic articles about violent hate crimes against LGBTQ people in Canada and the United States.  This document also includes a selective list of organizations that work to address homophobic and transphobic violence in Canada and the United States.  Newspaper and magazine articles are too numerous to include in the current bibliography, as are Web sites that document and discuss these acts.
+ 
+ This bibliography is limited to works that primarily address hate-motivated crimes perpetrated against people who identify or are perceived to identify as LGBTQ.  However, it is difficult and limiting to examine homophobic and transphobic violence in isolation from hate violence more broadly.  Violence against LGBTQ people can be motivated by a number of social forces -- including racism, ablism, classism, and xenophobia -- along with homophobia and transphobia.
+ 
+ This resource was approved by the Resources Committee of the GLBT Round Table of the American Library Association. To suggest an edit or a new resource, please contact the Resources Committee.
+
+ \newpage
+ \tableofcontents
+ \newpage
+
+ 
+ \nocite{*}
+ 
+ \defbibnote{overview}{Violence against LGBTQ people has had profound effects on our community.  Though homophobic and transphobic crimes are hardly new, little was published on them until the 1980s.  Early research focused on documenting specific incidents, providing psychological support to survivors, and examining the social issues that led to these incidents.  More recent scholarship examines bias crimes in a more intersectional framework, showing us that anti-LGBTQ hate crimes differ based on the victim's race and class.  Many authors who write about hate crimes act as activists, seeking to draw attention to these attacks on our community and underlying problems including homophobia, transphobia, misogyny, racism, classism, and ablism.}
+ \defbibnote{stats}{The federal governments of Canada and the United States both maintain statistics of bias-motivated crimes.  Government-kept statistics provide a limited representation of hate crimes because both victims and law enforcement agencies underreport bias crimes.}
+ \defbibnote{motivations}{Many authors and are interested in the motivations and predisposing factors of hate crime perpetrators, particularly with an interest to design interventions.}
+ \defbibnote{responses}{Some LGBTQ activists have advocated for the inclusion of gay, lesbian, bisexual, and sometimes transgender people in hate crimes statutes.  Supporters believe that sentencing enhancements included in these statutes can deter potential perpetrators from committing violent crimes against our community.
+ 
+ Other LGBTQ activists note that there is little evidence that these sentencing enhancements actually deter hate crimes.  Many, particularly in communities of color, see them as harmful statutes that are applied disproportionately against poor people and people of color.  Others feel that these statutes pose a threat to free speech.  Opponents of enhanced sentencing propose alternatives such as education programs designed to reduce anti-LGBTQ stigma and community-based restorative justice projects.
+ 
+ Whether they are tried under hate crime statutes or not, perpetrators of anti-LGBTQ violence often appeal to homophobic and transphobic stereotypes, hoping that judges and juries will be more lenient.  This strategy often takes the form of the gay panic defense or the trans panic defense.}
+ \defbibnote{incidents}{Statistics and analyses can only tell part of the story of hate crimes. Biographies, memoirs, case studies, and dramatizations can help to put a human face on this issue.}
+ \defbibnote{experiencing}{Several studies have examined how victims of hate crimes make sense of their experiences, and the psychological consequences of these incidents.}
+ \defbibnote{representations}{Hate crimes and their contexts are represented in very particular ways.  These pieces explore questions of which hate crimes are presented to the public and the specific ways in which they are presented.}
+ \defbibnote{regional}{These pieces explore hate crimes within specific geographical area.}
+ 
+ \printbibliography[title={Overview},keyword={overview},prenote={overview},heading=bibnumbered]
+ \printbibliography[title={Statistics},keyword={stats},prenote={stats},heading=bibnumbered]
+ \printbibliography[title={Motivations},keyword={motivations},prenote={motivations},heading=bibnumbered]
+ \printbibliography[title={Experiences of victims and their communities},keyword={experiencing},prenote={experiencing},heading=bibnumbered]
+ \printbibliography[title={Representing hate crimes},keyword={representations},prenote={representations},heading=bibnumbered]
+ \printbibliography[title={Responding to hate crimes},keyword={responses},prenote={responses},heading=bibnumbered]
+ \printbibliography[title={Anti-LGBTQ hate crimes in specific regions},keyword={regional},prenote={regional},heading=bibnumbered]
+ \printbibliography[title={Specific hate incidents},keyword={incidents},prenote={incidents},heading=bibnumbered]
+ 
+ \newpage
+ \section{Organizations}
+Many orgainizations work to respond to and prevent hate crimes; some of the most notable are listed here. \\
+
+
+\noindent AVP: The Anti-Violence Project \\
+\url{http://avp.org} \\
+(212) 714-1184 / (212) 714-1141 (Hotline) \\
+
+\noindent FORGE \\
+\url{http://forge-forward.org} \\
+(414) 559-2123 \\
+
+\noindent Matthew Shepard foundation \\
+\url{http://www.matthewshepard.org/} \\
+(303) 830-7400 \\
+
+\noindent National Gay and Lesbian Task Force \\
+\url{http://www.thetaskforce.org/} \\
+(202) 393-5177 \\
+
+\noindent Sylvia Rivera Law Project \\
+\url{http://www.srlp.org/} \\
+(212) 337-8550 \\
+
+
+\end{document}
